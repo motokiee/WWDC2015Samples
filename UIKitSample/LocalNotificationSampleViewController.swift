@@ -43,7 +43,7 @@ class LocalNotificationSampleViewController: UIViewController {
         localNotification.alertBody = "AlertBody"
         localNotification.timeZone = NSTimeZone.localTimeZone()
         localNotification.soundName = UILocalNotificationDefaultSoundName
-        localNotification.applicationIconBadgeNumber = 3
+        localNotification.applicationIconBadgeNumber = 1
         localNotification.category = "UIKitSample"
         
         self.registerSettingsAndCategories()
