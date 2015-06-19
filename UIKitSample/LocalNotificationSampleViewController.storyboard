@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--Local Notification Sample View Controller-->
+        <scene sceneID="ZDr-IC-kTJ">
+            <objects>
+                <viewController storyboardIdentifier="LocalNotificationSampleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SGM-UL-gyD" customClass="LocalNotificationSampleViewController" customModule="UIKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8wb-gd-u5F"/>
+                        <viewControllerLayoutGuide type="bottom" id="H6H-L6-SMJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qAi-5Z-Eqt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBY-x9-Z5F">
+                                <rect key="frame" x="186" y="562" width="228" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="b7I-1g-Tvr"/>
+                                    <constraint firstAttribute="height" constant="30" id="n3c-D2-doy"/>
+                                </constraints>
+                                <state key="normal" title="Make Notification With Text Input"/>
+                                <connections>
+                                    <action selector="createLocalNotification:" destination="SGM-UL-gyD" eventType="touchUpInside" id="i8E-pI-x8f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-OW-2mt">
+                                <rect key="frame" x="0.0" y="289" width="600" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="huo-rq-tIB"/>
+                                    <constraint firstAttribute="height" constant="21" id="r9X-eZ-0XK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H6H-L6-SMJ" firstAttribute="top" secondItem="CBY-x9-Z5F" secondAttribute="bottom" constant="8" id="7S4-Dw-LfW"/>
+                            <constraint firstItem="lx4-OW-2mt" firstAttribute="centerY" secondItem="qAi-5Z-Eqt" secondAttribute="centerY" id="eIr-Kk-MUM"/>
+                            <constraint firstItem="lx4-OW-2mt" firstAttribute="centerX" secondItem="qAi-5Z-Eqt" secondAttribute="centerX" id="lkp-ZS-6TK"/>
+                            <constraint firstItem="CBY-x9-Z5F" firstAttribute="centerX" secondItem="qAi-5Z-Eqt" secondAttribute="centerX" id="t0F-uu-A9a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="lx4-OW-2mt" id="Rx9-Hp-gEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZB-aM-wTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="381"/>
+        </scene>
+    </scenes>
+</document>

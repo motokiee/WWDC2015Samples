@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		368C33AF1B30D0150035864C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33AE1B30D0150035864C /* AppDelegate.swift */; };
-		368C33B11B30D0150035864C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33B01B30D0150035864C /* ViewController.swift */; };
 		368C33B41B30D0150035864C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C33B21B30D0150035864C /* Main.storyboard */; };
 		368C33B61B30D0150035864C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368C33B51B30D0150035864C /* Assets.xcassets */; };
 		368C33B91B30D0150035864C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C33B71B30D0150035864C /* LaunchScreen.storyboard */; };
+		368C33C11B30D02A0035864C /* TableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33C01B30D02A0035864C /* TableListViewController.swift */; };
+		368C33C31B30D1620035864C /* Resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 368C33C21B30D1620035864C /* Resource.plist */; };
+		368C33C51B30D3D10035864C /* LocalNotificationSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33C41B30D3D10035864C /* LocalNotificationSampleViewController.swift */; };
+		368C33CA1B30D4390035864C /* LocalNotificationSampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C33C91B30D4390035864C /* LocalNotificationSampleViewController.storyboard */; };
+		368C33CC1B30D4A70035864C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33CB1B30D4A70035864C /* Utility.swift */; };
+		368C33D11B32364A0035864C /* CoreSpotlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33D01B32364A0035864C /* CoreSpotlightViewController.swift */; };
+		368C33D31B3236620035864C /* CoreSpotlightViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C33D21B3236620035864C /* CoreSpotlightViewController.storyboard */; };
+		368C33D51B323AEE0035864C /* CoreSpotlight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 368C33D41B323AEE0035864C /* CoreSpotlight.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		368C33AB1B30D0150035864C /* UIKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		368C33AE1B30D0150035864C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		368C33B01B30D0150035864C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		368C33AE1B30D0150035864C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = UIKitSample/AppDelegate.swift; sourceTree = "<group>"; };
 		368C33B31B30D0150035864C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		368C33B51B30D0150035864C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		368C33B81B30D0150035864C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368C33BA1B30D0150035864C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368C33C01B30D02A0035864C /* TableListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableListViewController.swift; sourceTree = "<group>"; };
+		368C33C21B30D1620035864C /* Resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Resource.plist; sourceTree = "<group>"; };
+		368C33C41B30D3D10035864C /* LocalNotificationSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationSampleViewController.swift; sourceTree = "<group>"; };
+		368C33C91B30D4390035864C /* LocalNotificationSampleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocalNotificationSampleViewController.storyboard; sourceTree = "<group>"; };
+		368C33CB1B30D4A70035864C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		368C33D01B32364A0035864C /* CoreSpotlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreSpotlightViewController.swift; sourceTree = "<group>"; };
+		368C33D21B3236620035864C /* CoreSpotlightViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoreSpotlightViewController.storyboard; sourceTree = "<group>"; };
+		368C33D41B323AEE0035864C /* CoreSpotlight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CoreSpotlight.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +52,7 @@
 		368C33A21B30D0150035864C = {
 			isa = PBXGroup;
 			children = (
-				368C33AD1B30D0150035864C /* UIKitSample */,
+				368C33C81B30D4060035864C /* Group */,
 				368C33AC1B30D0150035864C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +65,59 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		368C33AD1B30D0150035864C /* UIKitSample */ = {
+		368C33AD1B30D0150035864C /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				368C33B51B30D0150035864C /* Assets.xcassets */,
+				368C33B71B30D0150035864C /* LaunchScreen.storyboard */,
+				368C33D41B323AEE0035864C /* CoreSpotlight.plist */,
+				368C33C21B30D1620035864C /* Resource.plist */,
+				368C33BA1B30D0150035864C /* Info.plist */,
+			);
+			name = Resouces;
+			path = UIKitSample;
+			sourceTree = "<group>";
+		};
+		368C33C61B30D3DC0035864C /* LocalNotificationSample */ = {
+			isa = PBXGroup;
+			children = (
+				368C33C41B30D3D10035864C /* LocalNotificationSampleViewController.swift */,
+				368C33C91B30D4390035864C /* LocalNotificationSampleViewController.storyboard */,
+			);
+			name = LocalNotificationSample;
+			path = UIKitSample;
+			sourceTree = "<group>";
+		};
+		368C33C71B30D3EA0035864C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				368C33C01B30D02A0035864C /* TableListViewController.swift */,
+				368C33B21B30D0150035864C /* Main.storyboard */,
+			);
+			name = List;
+			path = UIKitSample;
+			sourceTree = "<group>";
+		};
+		368C33C81B30D4060035864C /* Group */ = {
 			isa = PBXGroup;
 			children = (
 				368C33AE1B30D0150035864C /* AppDelegate.swift */,
-				368C33B01B30D0150035864C /* ViewController.swift */,
-				368C33B21B30D0150035864C /* Main.storyboard */,
-				368C33B51B30D0150035864C /* Assets.xcassets */,
-				368C33B71B30D0150035864C /* LaunchScreen.storyboard */,
-				368C33BA1B30D0150035864C /* Info.plist */,
+				368C33CB1B30D4A70035864C /* Utility.swift */,
+				368C33C71B30D3EA0035864C /* List */,
+				368C33C61B30D3DC0035864C /* LocalNotificationSample */,
+				368C33CD1B3179CD0035864C /* Core Spotlight */,
+				368C33AD1B30D0150035864C /* Resouces */,
 			);
-			path = UIKitSample;
+			name = Group;
+			sourceTree = "<group>";
+		};
+		368C33CD1B3179CD0035864C /* Core Spotlight */ = {
+			isa = PBXGroup;
+			children = (
+				368C33D01B32364A0035864C /* CoreSpotlightViewController.swift */,
+				368C33D21B3236620035864C /* CoreSpotlightViewController.storyboard */,
+			);
+			name = "Core Spotlight";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,9 +177,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368C33C31B30D1620035864C /* Resource.plist in Resources */,
+				368C33D31B3236620035864C /* CoreSpotlightViewController.storyboard in Resources */,
 				368C33B91B30D0150035864C /* LaunchScreen.storyboard in Resources */,
 				368C33B61B30D0150035864C /* Assets.xcassets in Resources */,
+				368C33CA1B30D4390035864C /* LocalNotificationSampleViewController.storyboard in Resources */,
 				368C33B41B30D0150035864C /* Main.storyboard in Resources */,
+				368C33D51B323AEE0035864C /* CoreSpotlight.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368C33B11B30D0150035864C /* ViewController.swift in Sources */,
+				368C33CC1B30D4A70035864C /* Utility.swift in Sources */,
+				368C33C11B30D02A0035864C /* TableListViewController.swift in Sources */,
+				368C33C51B30D3D10035864C /* LocalNotificationSampleViewController.swift in Sources */,
+				368C33D11B32364A0035864C /* CoreSpotlightViewController.swift in Sources */,
 				368C33AF1B30D0150035864C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

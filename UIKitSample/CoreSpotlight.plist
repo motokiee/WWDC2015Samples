@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Affogato</string>
+		<key>description</key>
+		<string>バニラ風味のアイスクリームやジェラートに飲料をかけて食べるスタイルのイタリアのデザート。「affogato」とはイタリア語で「溺れた（アイスクリーム）」の意である。</string>
+		<key>imageName</key>
+		<string>affogado</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Blue Bottle Coffee</string>
+		<key>description</key>
+		<string>コーヒー界の”Apple”とも呼ばれているアメリカで大人気のコーヒーショップには、GoogleやTwitterの創業者も出資をするなどサンフランシスコでも話題のお店です。</string>
+		<key>imageName</key>
+		<string>bluebottle_coffee</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Cable car</string>
+		<key>description</key>
+		<string>ケーブルカー (Cable car) は、Muniが運営する1873年開業の世界最古のケーブルカーである。
+</string>
+		<key>imageName</key>
+		<string>cable_car</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Facebook</string>
+		<key>description</key>
+		<string>Facebook（フェイスブック）は、Facebook, Inc.が運営するインターネット上のソーシャル・ネットワーキング・サービス（SNS）である。</string>
+		<key>imageName</key>
+		<string>facebook</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Google</string>
+		<key>description</key>
+		<string>Google（グーグル）は、検索エンジン、クラウド・コンピューティング、ソフトウェア、オンライン広告といったインターネット関連のサービスと製品を提供するアメリカ合衆国の多国籍企業である。</string>
+		<key>imageName</key>
+		<string>google</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Moscone West</string>
+		<key>description</key>
+		<string>モスコーンセンター（Moscone Center）は、カリフォルニア州サンフランシスコのダウンタウンに位置する会議および展示用施設で、サンフランシスコ市郡が所有し、SMGが管理している。</string>
+		<key>imageName</key>
+		<string>moscone_west</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>WWDC2015</string>
+		<key>description</key>
+		<string>Apple Worldwide Developers Conference. June 8-12, San Francisco.</string>
+		<key>imageName</key>
+		<string>wwdc2015</string>
+	</dict>
+</array>
+</plist>
