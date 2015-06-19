@@ -69,13 +69,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CSSearchableIndexDelegate
         return true
     }
 
-
-    // MARK: CSSearchableIndexDelegate
-    func searchableIndex(searchableIndex: CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler acknowledgementHandler: () -> Void) {
-        
-    }
-    
-    func searchableIndex(searchableIndex: CSSearchableIndex, reindexSearchableItemsWithIdentifiers identifiers: [String], acknowledgementHandler: () -> Void) {
-    }
 }
-
