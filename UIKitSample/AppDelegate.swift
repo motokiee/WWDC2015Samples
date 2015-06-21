@@ -8,14 +8,18 @@
 
 import UIKit
 import CoreSpotlight
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, CSSearchableIndexDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
+    let session = WCSession.defaultSession()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        session.delegate = self
+        session.activateSession()
         return true
     }
 
@@ -68,5 +72,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CSSearchableIndexDelegate
         }
         return true
     }
+    
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            let alert = UIAlertController(title: "Message Did Recieve", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.window?.rootViewController!.presentViewController(alert, animated: true, completion: {
+                
+            })
+        }
+    }
 
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+                
+        dispatch_async(dispatch_get_main_queue()) {
+            let alert = UIAlertController(title: "Message Did Recieve", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.window?.rootViewController!.presentViewController(alert, animated: true, completion: {
+                
+            })
+        }
+    }
+    
 }

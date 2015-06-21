@@ -3,5 +3,9 @@
 <plist version="1.0">
 <array>
 	<string>CoreSpotlight</string>
+	<string>WatchConnectivity</string>
+	<string>SafariViewController</string>
+	<string>LocalNotification</string>
+	<string>San Francisco</string>
 </array>
 </plist>

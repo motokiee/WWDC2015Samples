@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ClassName</key>
+		<string>WKInterfaceDevice</string>
+		<key>FunctionName</key>
+		<string>Haptic</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>WKInterfacePicker</string>
+		<key>FunctionName</key>
+		<string>Picker</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>WatchConnectivity</string>
+		<key>FunctionName</key>
+		<string>Connectivity</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>UIFont</string>
+		<key>FunctionName</key>
+		<string>SFCompact</string>
+	</dict>
+</array>
+</plist>
