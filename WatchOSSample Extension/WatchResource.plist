@@ -26,5 +26,11 @@
 		<key>FunctionName</key>
 		<string>SFCompact</string>
 	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>WKInterfaceController</string>
+		<key>FunctionName</key>
+		<string>AlertAndAction</string>
+	</dict>
 </array>
 </plist>

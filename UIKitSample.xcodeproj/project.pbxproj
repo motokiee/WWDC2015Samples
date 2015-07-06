@@ -17,6 +17,15 @@
 		360729F01B35ACDE004699DE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360729EF1B35ACDE004699DE /* ComplicationController.swift */; };
 		360729F21B35ACDE004699DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360729F11B35ACDE004699DE /* Assets.xcassets */; };
 		360729F61B35ACDE004699DE /* WatchOSSample.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 360729D41B35ACDE004699DE /* WatchOSSample.app */; };
+		3650E0BE1B49554A004D7B15 /* RecievedMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650E0BD1B49554A004D7B15 /* RecievedMessageController.swift */; };
+		366804161B498D04005EF8CA /* Federighi_with_me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 366804151B498D04005EF8CA /* Federighi_with_me.jpg */; };
+		368A06CD1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A06CC1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift */; };
+		368A06CF1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368A06CE1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard */; };
+		368A06D11B44FA6800E1E8D3 /* WatchConnectivity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 368A06D01B44FA6800E1E8D3 /* WatchConnectivity.plist */; };
+		368A06D41B46444300E1E8D3 /* AlertAndActionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A06D31B46444300E1E8D3 /* AlertAndActionInterfaceController.swift */; };
+		368A06D71B464B1100E1E8D3 /* FilePathsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A06D61B464B1100E1E8D3 /* FilePathsInterfaceController.swift */; };
+		368A06D91B464CCC00E1E8D3 /* FilePathsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A06D81B464CCC00E1E8D3 /* FilePathsListCell.swift */; };
+		368A06DB1B48F19D00E1E8D3 /* RecievedImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A06DA1B48F19D00E1E8D3 /* RecievedImageController.swift */; };
 		368C33AF1B30D0150035864C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C33AE1B30D0150035864C /* AppDelegate.swift */; };
 		368C33B41B30D0150035864C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C33B21B30D0150035864C /* Main.storyboard */; };
 		368C33B61B30D0150035864C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368C33B51B30D0150035864C /* Assets.xcassets */; };
@@ -102,6 +111,15 @@
 		360729EF1B35ACDE004699DE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		360729F11B35ACDE004699DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360729F31B35ACDE004699DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3650E0BD1B49554A004D7B15 /* RecievedMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedMessageController.swift; sourceTree = "<group>"; };
+		366804151B498D04005EF8CA /* Federighi_with_me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Federighi_with_me.jpg; sourceTree = "<group>"; };
+		368A06CC1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityViewController.swift; sourceTree = "<group>"; };
+		368A06CE1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WatchConnectivityViewController.storyboard; sourceTree = "<group>"; };
+		368A06D01B44FA6800E1E8D3 /* WatchConnectivity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WatchConnectivity.plist; sourceTree = "<group>"; };
+		368A06D31B46444300E1E8D3 /* AlertAndActionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAndActionInterfaceController.swift; sourceTree = "<group>"; };
+		368A06D61B464B1100E1E8D3 /* FilePathsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePathsInterfaceController.swift; sourceTree = "<group>"; };
+		368A06D81B464CCC00E1E8D3 /* FilePathsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePathsListCell.swift; sourceTree = "<group>"; };
+		368A06DA1B48F19D00E1E8D3 /* RecievedImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedImageController.swift; sourceTree = "<group>"; };
 		368C33AB1B30D0150035864C /* UIKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368C33AE1B30D0150035864C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = UIKitSample/AppDelegate.swift; sourceTree = "<group>"; };
 		368C33B31B30D0150035864C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,11 +184,15 @@
 			children = (
 				360729E91B35ACDE004699DE /* ExtensionDelegate.swift */,
 				360729E71B35ACDE004699DE /* InterfaceController.swift */,
+				368A06DA1B48F19D00E1E8D3 /* RecievedImageController.swift */,
+				3650E0BD1B49554A004D7B15 /* RecievedMessageController.swift */,
 				369B3F4F1B36546000B4D899 /* TopController */,
 				369B3F561B36587100B4D899 /* Haptic */,
 				369B3F5B1B365B0E00B4D899 /* Picker */,
 				369B3F5E1B365DEB00B4D899 /* Connectivity */,
 				36E40C221B36781100C29792 /* SFCompact */,
+				368A06D21B4643F100E1E8D3 /* AlertAndAction */,
+				368A06D51B46494300E1E8D3 /* FilePaths */,
 				360729EB1B35ACDE004699DE /* NotificationController.swift */,
 				360729ED1B35ACDE004699DE /* GlanceController.swift */,
 				360729EF1B35ACDE004699DE /* ComplicationController.swift */,
@@ -189,6 +211,33 @@
 				360729E61B35ACDE004699DE /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		368A06C71B44F7BB00E1E8D3 /* WatchConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				368A06CC1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift */,
+				368A06CE1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard */,
+			);
+			name = WatchConnectivity;
+			path = UIKitSample;
+			sourceTree = "<group>";
+		};
+		368A06D21B4643F100E1E8D3 /* AlertAndAction */ = {
+			isa = PBXGroup;
+			children = (
+				368A06D31B46444300E1E8D3 /* AlertAndActionInterfaceController.swift */,
+			);
+			name = AlertAndAction;
+			sourceTree = "<group>";
+		};
+		368A06D51B46494300E1E8D3 /* FilePaths */ = {
+			isa = PBXGroup;
+			children = (
+				368A06D61B464B1100E1E8D3 /* FilePathsInterfaceController.swift */,
+				368A06D81B464CCC00E1E8D3 /* FilePathsListCell.swift */,
+			);
+			name = FilePaths;
 			sourceTree = "<group>";
 		};
 		368C33A21B30D0150035864C = {
@@ -214,12 +263,14 @@
 		368C33AD1B30D0150035864C /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				366804151B498D04005EF8CA /* Federighi_with_me.jpg */,
 				368C33B51B30D0150035864C /* Assets.xcassets */,
 				368C33B71B30D0150035864C /* LaunchScreen.storyboard */,
 				368C33D41B323AEE0035864C /* CoreSpotlight.plist */,
 				368C33C21B30D1620035864C /* Resource.plist */,
 				36E40C201B36712500C29792 /* SFFontWeight.plist */,
 				368C33BA1B30D0150035864C /* Info.plist */,
+				368A06D01B44FA6800E1E8D3 /* WatchConnectivity.plist */,
 			);
 			name = Resouces;
 			path = UIKitSample;
@@ -250,6 +301,7 @@
 			children = (
 				368C33AE1B30D0150035864C /* AppDelegate.swift */,
 				368C33CB1B30D4A70035864C /* Utility.swift */,
+				368A06C71B44F7BB00E1E8D3 /* WatchConnectivity */,
 				368C33C71B30D3EA0035864C /* List */,
 				368C33C61B30D3DC0035864C /* LocalNotificationSample */,
 				368C33CD1B3179CD0035864C /* Core Spotlight */,
@@ -456,8 +508,11 @@
 				368C33C31B30D1620035864C /* Resource.plist in Resources */,
 				36E40C211B36712500C29792 /* SFFontWeight.plist in Resources */,
 				368C33D31B3236620035864C /* CoreSpotlightViewController.storyboard in Resources */,
+				368A06D11B44FA6800E1E8D3 /* WatchConnectivity.plist in Resources */,
 				368C33B91B30D0150035864C /* LaunchScreen.storyboard in Resources */,
 				369B3F4E1B36513A00B4D899 /* SafariViewController.storyboard in Resources */,
+				366804161B498D04005EF8CA /* Federighi_with_me.jpg in Resources */,
+				368A06CF1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard in Resources */,
 				368C33B61B30D0150035864C /* Assets.xcassets in Resources */,
 				368C33CA1B30D4390035864C /* LocalNotificationSampleViewController.storyboard in Resources */,
 				368C33B41B30D0150035864C /* Main.storyboard in Resources */,
@@ -474,17 +529,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				36E40C261B3678E000C29792 /* SFCompactListCell.swift in Sources */,
+				368A06DB1B48F19D00E1E8D3 /* RecievedImageController.swift in Sources */,
 				369B3F581B36589400B4D899 /* HapticInterfaceController.swift in Sources */,
+				368A06D41B46444300E1E8D3 /* AlertAndActionInterfaceController.swift in Sources */,
 				369B3F5D1B365B2B00B4D899 /* PickerInterfaceController.swift in Sources */,
 				36E40C241B36785900C29792 /* SFCompactInterfaceController.swift in Sources */,
 				369B3F551B3655C300B4D899 /* WatchOSSampleListCell.swift in Sources */,
 				360729EC1B35ACDE004699DE /* NotificationController.swift in Sources */,
 				369B3F601B365E0400B4D899 /* ConnectivityInterfaceController.swift in Sources */,
 				360729EA1B35ACDE004699DE /* ExtensionDelegate.swift in Sources */,
+				3650E0BE1B49554A004D7B15 /* RecievedMessageController.swift in Sources */,
 				360729F01B35ACDE004699DE /* ComplicationController.swift in Sources */,
+				368A06D71B464B1100E1E8D3 /* FilePathsInterfaceController.swift in Sources */,
 				360729E81B35ACDE004699DE /* InterfaceController.swift in Sources */,
 				360729EE1B35ACDE004699DE /* GlanceController.swift in Sources */,
 				369B3F5A1B36590F00B4D899 /* HapticListCell.swift in Sources */,
+				368A06D91B464CCC00E1E8D3 /* FilePathsListCell.swift in Sources */,
 				369B3F511B3654ED00B4D899 /* TopInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +558,7 @@
 				368C33C51B30D3D10035864C /* LocalNotificationSampleViewController.swift in Sources */,
 				36E40C1F1B36700700C29792 /* SanFranciscoViewController.swift in Sources */,
 				368C33D11B32364A0035864C /* CoreSpotlightViewController.swift in Sources */,
+				368A06CD1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift in Sources */,
 				369B3F4A1B36511700B4D899 /* SafariViewController.swift in Sources */,
 				368C33AF1B30D0150035864C /* AppDelegate.swift in Sources */,
 			);
@@ -731,7 +792,7 @@
 				360729FA1B35ACDE004699DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		360729FD1B35ACDE004699DE /* Build configuration list for PBXNativeTarget "WatchOSSample" */ = {
 			isa = XCConfigurationList;
@@ -740,7 +801,7 @@
 				360729F81B35ACDE004699DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		368C33A61B30D0150035864C /* Build configuration list for PBXProject "UIKitSample" */ = {
 			isa = XCConfigurationList;
@@ -749,7 +810,7 @@
 				368C33BC1B30D0150035864C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		368C33BD1B30D0150035864C /* Build configuration list for PBXNativeTarget "UIKitSample" */ = {
 			isa = XCConfigurationList;
@@ -758,7 +819,7 @@
 				368C33BF1B30D0150035864C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

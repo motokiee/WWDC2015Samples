@@ -9,7 +9,6 @@
 import WatchKit
 import Foundation
 
-
 class PickerInterfaceController: WKInterfaceController {
 
     @IBOutlet var picker: WKInterfacePicker!
@@ -17,31 +16,39 @@ class PickerInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-    }
-    
-    override func willActivate() {
-
-        super.willActivate()
-        
-        var images: [UIImage] = [UIImage]()
+                
         var pickerItems: [WKPickerItem] = [WKPickerItem]()
         
         for i in 0...59 {
-            
-            let imageName = "cobalt_watch_background to_3m_" + String(i)
-            let image = UIImage(named: imageName)
-            images.append(image!)
-            
             let item = WKPickerItem()
             item.title = String(i)
             item.caption = "Image No."
             pickerItems.append(item)
         }
         
-        let progressImages = UIImage.animatedImageWithImages(images, duration: 1.0)
-        self.group.setBackgroundImage(progressImages)
+        self.group.setBackgroundImage(UIImage(named: "Circle0"))
         self.picker.setCoordinatedAnimations([self.group])
         self.picker.setItems(pickerItems)
+    }
+    
+    override func willActivate() {
+
+        super.willActivate()
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            
+            var images: [UIImage] = [UIImage]()
+            
+            for i in 0...59 {
+                
+                let imageName = "Circle" + String(i)
+                let image = UIImage(named: imageName)
+                images.append(image!)
+            }
+            
+            let progressImages = UIImage.animatedImageWithImages(images, duration: 1.0)
+            self.group.setBackgroundImage(progressImages)
+        }
     }
     
     override func didDeactivate() {
@@ -52,26 +59,4 @@ class PickerInterfaceController: WKInterfaceController {
         let device = WKInterfaceDevice()
         device.playHaptic(WKHapticType(rawValue: value)!)
     }
-   /*
-    @IBAction func connect() {
-        
-        if WCSession.isSupported() {
-            let session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-            
-            let device = WKInterfaceDevice()
-            device.playHaptic(WKHapticType.Success)
-            
-            let message = ["message": "Messagekey"]
-            session.sendMessage(message, replyHandler: { (replyMassage) -> Void in
-                print("\(replyMassage)")
-                
-                }, errorHandler: { (error) -> Void in
-                    print("error")
-            })
-            
-        }
-    }
-*/
 }

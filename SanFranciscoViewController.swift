@@ -10,7 +10,7 @@ import UIKit
 
 class SanFranciscoViewController: UITableViewController {
 
-    let fontSize: CGFloat = 30.0
+    let fontSize: CGFloat = 50.0
     
     lazy var items: [String] = {
         let filePath = NSBundle.mainBundle().pathForResource("SFFontWeight", ofType:"plist" )
@@ -43,7 +43,8 @@ class SanFranciscoViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("SanFranciscoSampleCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "あのハートイーヴォのすきとおった風、夏でもそこに冷たさをもつ青いそら、美しい..."
+        cell.textLabel?.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい..."
+//        cell.textLabel?.text = "美しい国、ジャパン。"
         cell.detailTextLabel?.text = "The quick brown fox jumps over the lazy dog."
         
         var weight: CGFloat = UIFontWeightUltraLight
@@ -78,7 +79,34 @@ class SanFranciscoViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let indexItem = items[section]
-        return indexItem
+        
+        var weight: CGFloat = UIFontWeightUltraLight
+        
+        if items[section] == "UIFontWeightUltraLight" {
+            weight = UIFontWeightUltraLight
+        } else if items[section] == "UIFontWeightThin" {
+            weight = UIFontWeightThin
+        } else if items[section] == "UIFontWeightLight" {
+            weight = UIFontWeightLight
+        } else if items[section] == "UIFontWeightRegular" {
+            weight = UIFontWeightRegular
+        } else if items[section] == "UIFontWeightMedium" {
+            weight = UIFontWeightMedium
+        } else if items[section] == "UIFontWeightSemibold" {
+            weight = UIFontWeightSemibold
+        } else if items[section] == "UIFontWeightBold" {
+            weight = UIFontWeightBold
+        } else if items[section] == "UIFontWeightHeavy" {
+            weight = UIFontWeightHeavy
+        } else if items[section] == "UIFontWeightBlack" {
+            weight = UIFontWeightBlack
+        }
+        
+        let font = UIFont.systemFontOfSize(self.fontSize, weight: weight)
+        
+        print("List:\(items[section])")
+        print("Name:\(font.fontName)\n")
+        
+        return font.fontName
     }
 }

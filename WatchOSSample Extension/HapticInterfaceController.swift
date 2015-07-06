@@ -32,13 +32,14 @@ class HapticInterfaceController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         
-        self.table.setNumberOfRows(items.count, withRowType: "HapticListCell")
-        items.enumerateObjectsUsingBlock { (object: AnyObject!, index: NSInteger, stop: UnsafeMutablePointer<ObjCBool> ) -> Void in
-            
-            let cell: HapticListCell = self.table.rowControllerAtIndex(index)! as! HapticListCell
-            cell.configureCell(self.items.objectAtIndex(index) as! String)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.table.setNumberOfRows(self.items.count, withRowType: "HapticListCell")
+            self.items.enumerateObjectsUsingBlock { (object: AnyObject!, index: NSInteger, stop: UnsafeMutablePointer<ObjCBool> ) -> Void in
+                
+                let cell: HapticListCell = self.table.rowControllerAtIndex(index)! as! HapticListCell
+                cell.configureCell(self.items.objectAtIndex(index) as! String)
+            }
         }
-        
     }
     
     

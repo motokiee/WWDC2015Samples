@@ -12,8 +12,16 @@ import WatchConnectivity
 
 class ConnectivityInterfaceController: WKInterfaceController {
 
+    let session:WCSession = WCSession.defaultSession()
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+     
+        // セッション開始可能か確認
+        if WCSession.isSupported() {
+            self.session.activateSession()
+        }
+        
         
         // Configure interface objects here.
     }
@@ -46,6 +54,5 @@ class ConnectivityInterfaceController: WKInterfaceController {
             
         }
     }
-
-    
+   
 }

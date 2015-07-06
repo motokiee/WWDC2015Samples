@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        session.delegate = self
-        session.activateSession()
+        self.session.delegate = self
+        self.session.activateSession()
         return true
     }
 

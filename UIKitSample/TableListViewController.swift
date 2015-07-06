@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import WatchConnectivity
 
-class TableListViewController: UITableViewController, WCSessionDelegate {
-    
-    var watchSession = WCSession.defaultSession()
+
+class TableListViewController: UITableViewController {
     
     lazy var items: NSArray = {
         let filePath = NSBundle.mainBundle().pathForResource("Resource", ofType:"plist" )
@@ -22,9 +20,6 @@ class TableListViewController: UITableViewController, WCSessionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.watchSession.delegate = self
-        self.watchSession.activateSession()
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,20 +55,11 @@ class TableListViewController: UITableViewController, WCSessionDelegate {
         
         // Watch Connectivity
         if indexPath.row == 1 {
-            if WCSession.isSupported() {
-                let session = WCSession.defaultSession()
-                session.delegate = self
-                session.activateSession()
-                
-                let message = ["message": "Messagekey"]
-                session.sendMessage(message, replyHandler: { (replyMassage) -> Void in
-                    print("\(replyMassage)")
-                    
-                    }, errorHandler: { (error) -> Void in
-                        print("error")
-                })
-            }
-            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            let watchConnectivityViewController =
+            UIStoryboard.instantiateViewController(
+                "WatchConnectivityViewController",
+                viewControllerName: "WatchConnectivityViewController") as! WatchConnectivityViewController
+            self.showViewController(watchConnectivityViewController, sender: self)
         }
 
         // SafariViewController
@@ -102,28 +88,6 @@ class TableListViewController: UITableViewController, WCSessionDelegate {
     }
     
     
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            let alert = UIAlertController(title: "Message Did Recieve", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: {
-                
-            })
-        }
-    }
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            let alert = UIAlertController(title: "Message Did Recieve", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: {
-                
-            })
-        }
-    }
+
     
 }
