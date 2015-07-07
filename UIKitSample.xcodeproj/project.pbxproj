@@ -18,7 +18,6 @@
 		360729F21B35ACDE004699DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360729F11B35ACDE004699DE /* Assets.xcassets */; };
 		360729F61B35ACDE004699DE /* WatchOSSample.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 360729D41B35ACDE004699DE /* WatchOSSample.app */; };
 		3650E0BE1B49554A004D7B15 /* RecievedMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650E0BD1B49554A004D7B15 /* RecievedMessageController.swift */; };
-		366804161B498D04005EF8CA /* Federighi_with_me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 366804151B498D04005EF8CA /* Federighi_with_me.jpg */; };
 		368A06CD1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A06CC1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift */; };
 		368A06CF1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368A06CE1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard */; };
 		368A06D11B44FA6800E1E8D3 /* WatchConnectivity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 368A06D01B44FA6800E1E8D3 /* WatchConnectivity.plist */; };
@@ -47,12 +46,14 @@
 		369B3F5A1B36590F00B4D899 /* HapticListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B3F591B36590F00B4D899 /* HapticListCell.swift */; };
 		369B3F5D1B365B2B00B4D899 /* PickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B3F5C1B365B2B00B4D899 /* PickerInterfaceController.swift */; };
 		369B3F601B365E0400B4D899 /* ConnectivityInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B3F5F1B365E0400B4D899 /* ConnectivityInterfaceController.swift */; };
+		36DF3DE81B4B8DF000DEAE75 /* Affogato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36DF3DE71B4B8DF000DEAE75 /* Affogato.jpg */; };
 		36E40C1D1B366E0600C29792 /* SanFranciscoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E40C1C1B366E0600C29792 /* SanFranciscoViewController.storyboard */; };
 		36E40C1F1B36700700C29792 /* SanFranciscoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E40C1E1B36700700C29792 /* SanFranciscoViewController.swift */; };
 		36E40C211B36712500C29792 /* SFFontWeight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36E40C201B36712500C29792 /* SFFontWeight.plist */; };
 		36E40C241B36785900C29792 /* SFCompactInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E40C231B36785900C29792 /* SFCompactInterfaceController.swift */; };
 		36E40C261B3678E000C29792 /* SFCompactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E40C251B3678E000C29792 /* SFCompactListCell.swift */; };
 		36E40C281B36795700C29792 /* SFCompactFontWeight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36E40C271B36795700C29792 /* SFCompactFontWeight.plist */; };
+		36E70C811B4B5848003737D3 /* twizzlers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36E70C801B4B5847003737D3 /* twizzlers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +113,6 @@
 		360729F11B35ACDE004699DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360729F31B35ACDE004699DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3650E0BD1B49554A004D7B15 /* RecievedMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedMessageController.swift; sourceTree = "<group>"; };
-		366804151B498D04005EF8CA /* Federighi_with_me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Federighi_with_me.jpg; sourceTree = "<group>"; };
 		368A06CC1B44F7FF00E1E8D3 /* WatchConnectivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityViewController.swift; sourceTree = "<group>"; };
 		368A06CE1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WatchConnectivityViewController.storyboard; sourceTree = "<group>"; };
 		368A06D01B44FA6800E1E8D3 /* WatchConnectivity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WatchConnectivity.plist; sourceTree = "<group>"; };
@@ -143,12 +143,14 @@
 		369B3F591B36590F00B4D899 /* HapticListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticListCell.swift; sourceTree = "<group>"; };
 		369B3F5C1B365B2B00B4D899 /* PickerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerInterfaceController.swift; sourceTree = "<group>"; };
 		369B3F5F1B365E0400B4D899 /* ConnectivityInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityInterfaceController.swift; sourceTree = "<group>"; };
+		36DF3DE71B4B8DF000DEAE75 /* Affogato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Affogato.jpg; sourceTree = "<group>"; };
 		36E40C1C1B366E0600C29792 /* SanFranciscoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SanFranciscoViewController.storyboard; sourceTree = "<group>"; };
 		36E40C1E1B36700700C29792 /* SanFranciscoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanFranciscoViewController.swift; sourceTree = "<group>"; };
 		36E40C201B36712500C29792 /* SFFontWeight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFFontWeight.plist; sourceTree = "<group>"; };
 		36E40C231B36785900C29792 /* SFCompactInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCompactInterfaceController.swift; sourceTree = "<group>"; };
 		36E40C251B3678E000C29792 /* SFCompactListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCompactListCell.swift; sourceTree = "<group>"; };
 		36E40C271B36795700C29792 /* SFCompactFontWeight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFCompactFontWeight.plist; sourceTree = "<group>"; };
+		36E70C801B4B5847003737D3 /* twizzlers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twizzlers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		360729E51B35ACDE004699DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				36E70C801B4B5847003737D3 /* twizzlers.jpg */,
 				360729E61B35ACDE004699DE /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -263,7 +266,7 @@
 		368C33AD1B30D0150035864C /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
-				366804151B498D04005EF8CA /* Federighi_with_me.jpg */,
+				36DF3DE71B4B8DF000DEAE75 /* Affogato.jpg */,
 				368C33B51B30D0150035864C /* Assets.xcassets */,
 				368C33B71B30D0150035864C /* LaunchScreen.storyboard */,
 				368C33D41B323AEE0035864C /* CoreSpotlight.plist */,
@@ -495,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E70C811B4B5848003737D3 /* twizzlers.jpg in Resources */,
 				36E40C281B36795700C29792 /* SFCompactFontWeight.plist in Resources */,
 				369B3F531B36558900B4D899 /* WatchResource.plist in Resources */,
 				360729F21B35ACDE004699DE /* Assets.xcassets in Resources */,
@@ -506,12 +510,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				368C33C31B30D1620035864C /* Resource.plist in Resources */,
+				36DF3DE81B4B8DF000DEAE75 /* Affogato.jpg in Resources */,
 				36E40C211B36712500C29792 /* SFFontWeight.plist in Resources */,
 				368C33D31B3236620035864C /* CoreSpotlightViewController.storyboard in Resources */,
 				368A06D11B44FA6800E1E8D3 /* WatchConnectivity.plist in Resources */,
 				368C33B91B30D0150035864C /* LaunchScreen.storyboard in Resources */,
 				369B3F4E1B36513A00B4D899 /* SafariViewController.storyboard in Resources */,
-				366804161B498D04005EF8CA /* Federighi_with_me.jpg in Resources */,
 				368A06CF1B44F80700E1E8D3 /* WatchConnectivityViewController.storyboard in Resources */,
 				368C33B61B30D0150035864C /* Assets.xcassets in Resources */,
 				368C33CA1B30D4390035864C /* LocalNotificationSampleViewController.storyboard in Resources */,

@@ -67,16 +67,16 @@ class WatchConnectivityViewController: UITableViewController, WCSessionDelegate 
             switch indexPath.row {
                 
             case 0:
-                title = self.correspondMessage(self.watchSession.paired, stateType: WatchSessionStateType.Paired)
+                title = self.watchSession.correspondMessage(WatchSessionStateType.Paired)
 
             case 1:
-                title = self.correspondMessage(self.watchSession.watchAppInstalled, stateType: WatchSessionStateType.WatchAppInstalled)
+                title = self.watchSession.correspondMessage(WatchSessionStateType.WatchAppInstalled)
                 
             case 2:
-                title = self.correspondMessage(self.watchSession.complicationEnabled, stateType: WatchSessionStateType.ComplicationEnabled)
+                title = self.watchSession.correspondMessage(WatchSessionStateType.ComplicationEnabled)
 
             case 3:
-                title = self.correspondMessage(self.watchSession.reachable, stateType: WatchSessionStateType.Reachable)
+                title = self.watchSession.correspondMessage(WatchSessionStateType.Reachable)
                 
             case 4:
                 
@@ -99,7 +99,7 @@ class WatchConnectivityViewController: UITableViewController, WCSessionDelegate 
                             self.presentViewController(alert, animated: true, completion: nil)
                     })
                 } else {
-                    title = self.correspondMessage(self.watchSession.reachable, stateType: WatchSessionStateType.Reachable)
+                    title = self.watchSession.correspondMessage(WatchSessionStateType.Reachable)
                     break
                 }
                 
@@ -126,30 +126,27 @@ class WatchConnectivityViewController: UITableViewController, WCSessionDelegate 
                             self.presentViewController(alert, animated: true, completion: nil)
                     })
                 } else {
-                    title = self.correspondMessage(self.watchSession.reachable, stateType: WatchSessionStateType.Reachable)
+                    title = self.watchSession.correspondMessage(WatchSessionStateType.Reachable)
                     break
                 }
                 
             case 6:
-                // FIXME: applicationContext
                 let applicationContext = ["ApplicationContext" : NSDate().description]
                 
                 do {
                     try self.watchSession.updateApplicationContext(applicationContext)
-                    let printMessage = self.watchSession.applicationContext["ApplicationContext"]
-                    print("\(printMessage)")
                 } catch {
-                    
                     let alert = UIAlertController(title: "ApplicationContext Update Error", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
                 }
                 
             case 7:
-                // 送信側
-                guard let filePath = NSBundle.mainBundle().pathForResource("Federighi_with_me", ofType:"jpg") else {return}
+                guard let filePath = NSBundle.mainBundle().pathForResource("Affogato", ofType:"jpg") else {return}
+                
+                // !!!:NSURL(fileURLWithPath:)を使用すること
                 let fileURLPath = NSURL(fileURLWithPath: filePath)
-                self.watchSession.transferFile(fileURLPath, metadata: ["TransferFile":"transferFile"])
+                self.watchSession.transferFile(fileURLPath, metadata: ["TransferFile":"Federighi_with_me"])
 
             case 8:
                 let userInfo = ["UserInfo":"transferUserInfo"]
@@ -161,7 +158,7 @@ class WatchConnectivityViewController: UITableViewController, WCSessionDelegate 
                     let complicationUserInfo = ["ComplicationUserInfo":"transferCurrentComplicationUserInfo"]
                     self.watchSession.transferCurrentComplicationUserInfo(complicationUserInfo)
                 } else {
-                    title = self.correspondMessage(self.watchSession.complicationEnabled, stateType: WatchSessionStateType.ComplicationEnabled)
+                    title = self.watchSession.correspondMessage(WatchSessionStateType.ComplicationEnabled)
                     break
                 }
 
@@ -194,117 +191,18 @@ class WatchConnectivityViewController: UITableViewController, WCSessionDelegate 
                 let alert = UIAlertController(title: "WCErrorCode rawValue", message: message, preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 
-                self.presentViewController(alert, animated: true, completion: {
-                })
+                self.presentViewController(alert, animated: true, completion:nil)
                 
             default:
-                abort()
+                return
             }
 
             if title != nil {
                 let alert = UIAlertController(title: title, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                
-                self.presentViewController(alert, animated: true, completion: {
-                })
+                self.presentViewController(alert, animated: true, completion:nil)
             }
         }
-    }
-    
-    // MARK: Private
-    func correspondMessage(state: Bool, stateType: WatchSessionStateType) -> String {
-        
-        let title: String
-        
-        switch stateType {
-        case .Paired:
-            if state {
-                title = "ペアリング済み"
-            } else {
-                title = "ペアリングされていません"
-            }
-        case .WatchAppInstalled:
-            if state {
-                title = "Watch app インストール済み"
-            } else {
-                title = "Watch appがインストールされていません"
-            }
-        case .ComplicationEnabled:
-            if state {
-                title = "complication設定済み"
-            } else {
-                title = "complicationが設定されていません"
-            }
-            
-        case .Reachable:
-            if state {
-                title = "Apple Watchと通信可能"
-            } else {
-                title = "Apple Watchと通信できません"
-            }
-            
-        }
-        
-        return title
     }
 
-    // MARK: WCSessionDelegate
-    
-    func sessionWatchStateDidChange(session: WCSession) {
-        // paired, watchAppInstalled, complicationEnabled, or watchDirectoryURLあたりの状態が変更されたら呼ばれる
-        // The session object calls this method when the value in the paired, watchAppInstalled, complicationEnabled, or watchDirectoryURL properties of the WCSession object changes.
-    }
-    
-    func sessionReachabilityDidChange(session: WCSession) {
-        // Reachableの状態が変化したら呼ばれる
-    }
-    
-    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
-        print("\(applicationContext)")
-    }
-    
-    func session(session: WCSession, didFinishFileTransfer fileTransfer: WCSessionFileTransfer, error: NSError?) {
-        
-        if (error != nil) {
-            print("\(error)")
-        }
-        
-        print("file transfer is finished")
-
-    }
-    
-    
-    func session(session: WCSession, didFinishUserInfoTransfer userInfoTransfer: WCSessionUserInfoTransfer, error: NSError?) {
-    }
-    
-    func session(session: WCSession, didReceiveFile file: WCSessionFile) {
-    }
-
-    func session(session: WCSession, didReceiveUserInfo userInfo: [String : AnyObject]) {
-    }
-
-    // MARK: WCSessionDelegate - message
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
-        dispatch_async(dispatch_get_main_queue()) {
-            let alert = UIAlertController(title: "Message Did Recieve", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: {
-                
-            })
-        }
-    }
-    
-    // !!!: 対になるアプリからレスポンスを受け取る場合はこちらを使用する
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        dispatch_async(dispatch_get_main_queue()) {
-            let alert = UIAlertController(title: "Message Did Recieve", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: {
-            })
-        }
-    }
-    
-    
 }

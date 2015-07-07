@@ -36,23 +36,49 @@ class ConnectivityInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    @IBAction func connect() {
+    // MARK: Action
+    @IBAction func updateApplicationContext() {
+        let applicationContext = ["ApplicationContext" : NSDate().description]
+        do {
+            try self.session.updateApplicationContext(applicationContext)
+        } catch {
+            print("error")
+        }
+    }
+    
+    @IBAction func transferUserInfo() {
+        let userInfo = ["UserInfo":"transferUserInfo"]
+        self.session.transferUserInfo(userInfo)
+    }
+    
+    @IBAction func transferFile() {
         
-        if WCSession.isSupported() {
-            let session = WCSession.defaultSession()
-            session.activateSession()
-            
-            let device = WKInterfaceDevice()
-            device.playHaptic(WKHapticType.Success)
-            
-            let message = ["message": "Messagekey"]
-            session.sendMessage(message, replyHandler: { (replyMassage) -> Void in
+        guard let filePath = NSBundle.mainBundle().pathForResource("twizzlers", ofType:"jpg") else {return}
+        
+        // !!!:NSURL(fileURLWithPath:)を使用すること
+        let fileURLPath = NSURL(fileURLWithPath: filePath)
+        self.session.transferFile(fileURLPath, metadata: ["TransferFile":"twizzlers"])
+    }
+    
+    @IBAction func sendMessage() {
+
+        if self.session.reachable {
+            let message = ["Messagekey": "message"]
+            self.session.sendMessage(message, replyHandler: { (replyMassage) -> Void in
                 print("\(replyMassage)")
                 }, errorHandler: { (error) -> Void in
                     print("error")
             })
-            
         }
     }
-   
+    
+    @IBAction func sendMessageData() {
+        
+        let data = NSData(data: UIImagePNGRepresentation(UIImage(named: "apple")!)!)
+        self.session.sendMessageData(data, replyHandler: { (data) -> Void in
+                print("success")
+            }, errorHandler: { (error) -> Void in
+                print("error")
+        })
+    }
 }
