@@ -153,7 +153,7 @@ class WatchConnectivityViewController: UITableViewController, WCSessionDelegate 
                 self.watchSession.transferUserInfo(userInfo)
                 
             case 9:
-                
+                // compliaction関連
                 if self.watchSession.complicationEnabled {
                     let complicationUserInfo = ["ComplicationUserInfo":"transferCurrentComplicationUserInfo"]
                     self.watchSession.transferCurrentComplicationUserInfo(complicationUserInfo)
