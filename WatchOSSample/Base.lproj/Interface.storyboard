@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ecz-Mu-MFT" defaultGlanceController="0uZ-2p-rRc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <scenes>
+        <!--Haptic-->
+        <scene sceneID="80s-Qz-lSx">
+            <objects>
+                <controller identifier="HapticInterfaceController" title="Haptic" hidesWhenLoading="NO" id="SwN-m1-cWw" customClass="HapticInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <table alignment="left" id="bWQ-T5-Dud">
+                            <items>
+                                <tableRow identifier="HapticListCell" id="gQu-Yw-dY8" customClass="HapticListCell" customModule="WatchOSSample_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="sFQ-tj-a9U">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Haptic" id="rvo-CK-ODC"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="rvo-CK-ODC" id="9rH-SL-7rI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="bWQ-T5-Dud" id="Lsh-sU-pBd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="409" y="348"/>
+        </scene>
+        <!--Watch OS2 Sample-->
+        <scene sceneID="gv2-G5-6fC">
+            <objects>
+                <controller identifier="TopInterfaceController" title="Watch OS2 Sample" hidesWhenLoading="NO" id="Ecz-Mu-MFT" customClass="TopInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <table alignment="left" id="Dm5-oK-JfG">
+                            <items>
+                                <tableRow identifier="WatchOSSampleListCell" id="sIY-wF-gRE" customClass="WatchOSSampleListCell" customModule="WatchOSSample_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" spacing="0.0" id="dZK-k9-URa">
+                                        <items>
+                                            <label alignment="left" text="Label" id="Iuc-YU-PBK"/>
+                                            <label alignment="left" text="Label" id="GhC-j9-RvK">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="captionLabel" destination="GhC-j9-RvK" id="6bF-Rn-Mvp"/>
+                                        <outlet property="titleLabel" destination="Iuc-YU-PBK" id="Iqp-ED-pke"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Dm5-oK-JfG" id="JbC-SQ-PVf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="248" y="348"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="WatchOSSample" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="WatchOSSample" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+        <!--Picker-->
+        <scene sceneID="mRj-qw-QB7">
+            <objects>
+                <controller identifier="PickerInterfaceController" title="Picker" id="MRp-zI-U8M" customClass="PickerInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <group width="135" height="135" alignment="left" backgroundImage="Circle59" animationDuration="1" id="q66-Nx-Bpc">
+                            <items>
+                                <picker width="80" height="80" alignment="center" verticalAlignment="center" focusStyle="sequence" id="bKx-qD-KT5"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="group" destination="q66-Nx-Bpc" id="KJq-OX-PGQ"/>
+                        <outlet property="picker" destination="bKx-qD-KT5" id="YTv-m2-YP4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="573" y="348"/>
+        </scene>
+        <!--SF Compact-->
+        <scene sceneID="DYZ-yO-EE4">
+            <objects>
+                <controller identifier="SFCompactInterfaceController" title="SF Compact" hidesWhenLoading="NO" id="Uhq-TI-fUs" customClass="SFCompactInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <table alignment="center" verticalAlignment="center" id="KsB-14-yrE">
+                            <items>
+                                <tableRow identifier="SFCompactListCell" selectable="NO" id="Dyj-iy-Qok" customClass="SFCompactListCell" customModule="WatchOSSample_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="taS-sH-gQc">
+                                        <items>
+                                            <label alignment="left" text="Label" id="RHd-5b-aRg"/>
+                                            <label alignment="left" text="Label" id="HUQ-eK-a75">
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="captionLabel" destination="HUQ-eK-a75" id="GRY-Dg-tK2"/>
+                                        <outlet property="titleLabel" destination="RHd-5b-aRg" id="8NA-hU-FGC"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <picker width="1" height="60" alignment="center" focusStyle="sequence" id="vEo-bC-T4h">
+                            <connections>
+                                <action selector="picked:" destination="Uhq-TI-fUs" id="MMz-tS-uEJ"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="vEo-bC-T4h" id="BHD-A9-epp"/>
+                        <outlet property="table" destination="KsB-14-yrE" id="Ukc-O5-LB5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="890" y="348"/>
+        </scene>
+        <!--WatchConnectivity-->
+        <scene sceneID="19V-qe-4jv">
+            <objects>
+                <controller identifier="ConnectivityInterfaceController" title="WatchConnectivity" hidesWhenLoading="NO" id="a2G-DV-RDc" customClass="ConnectivityInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="App Context" id="MJP-RW-0fV">
+                            <connections>
+                                <action selector="updateApplicationContext" destination="a2G-DV-RDc" id="Il3-NF-rrh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="UserInfo" id="uDH-iL-JHR">
+                            <connections>
+                                <action selector="transferUserInfo" destination="a2G-DV-RDc" id="1Nf-QO-mzg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="File" id="WQF-dZ-cir">
+                            <connections>
+                                <action selector="transferFile" destination="a2G-DV-RDc" id="b3I-Fy-s5K"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Message" id="Lkd-X4-csu">
+                            <connections>
+                                <action selector="sendMessage" destination="a2G-DV-RDc" id="uzV-cv-4dA"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Message Data" id="c3H-zX-ZXK">
+                            <connections>
+                                <action selector="sendMessageData" destination="a2G-DV-RDc" id="hlX-uY-TId"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="731" y="348"/>
+        </scene>
+        <!--Alert and Action-->
+        <scene sceneID="5mJ-YH-zWl">
+            <objects>
+                <controller identifier="AlertAndActionInterfaceController" title="Alert and Action" hidesWhenLoading="NO" id="taX-td-v7Q" customClass="AlertAndActionInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Alert" id="q6y-Bf-t8h">
+                            <connections>
+                                <action selector="presentAlert" destination="taX-td-v7Q" id="an5-c7-c1h"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Action" id="bqR-eN-Vf1">
+                            <connections>
+                                <action selector="presentAction" destination="taX-td-v7Q" id="tlf-qC-ICm"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1051" y="348"/>
+        </scene>
+        <!--File Paths-->
+        <scene sceneID="hEF-jS-bgj">
+            <objects>
+                <controller identifier="FilePathsInterfaceController" title="File Paths" hidesWhenLoading="NO" id="rBg-tg-Eco" customClass="FilePathsInterfaceController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <table alignment="left" id="jkW-lA-BvJ">
+                            <items>
+                                <tableRow identifier="FilePathsListCell" id="y8C-GU-UlQ" customClass="FilePathsListCell" customModule="WatchOSSample_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" spacing="0.0" id="5de-hn-jjH">
+                                        <items>
+                                            <label width="33" height="16" alignment="left" text="Label" id="XN0-UP-lwN">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="captionLabel" destination="XN0-UP-lwN" id="8Z1-Nr-cEe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="jkW-lA-BvJ" id="CQL-rh-gJF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1216" y="348"/>
+        </scene>
+        <!--RecievedImageController-->
+        <scene sceneID="TdM-QQ-WVZ">
+            <objects>
+                <controller identifier="RecievedImageController" hidesWhenLoading="NO" id="LnC-0c-bFH" customClass="RecievedImageController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <imageView alignment="center" id="lgg-mk-D4D"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="lgg-mk-D4D" id="UUq-UQ-cD3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1380" y="348"/>
+        </scene>
+        <!--RecievedMessageController-->
+        <scene sceneID="28t-Hw-BBD">
+            <objects>
+                <controller identifier="RecievedMessageController" hidesWhenLoading="NO" id="KZZ-t4-n4B" customClass="RecievedMessageController" customModule="WatchOSSample_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" numberOfLines="0" id="5yA-2l-0Lu"/>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="5yA-2l-0Lu" id="ixu-Lh-sZV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1534" y="348"/>
+        </scene>
+    </scenes>
+</document>
