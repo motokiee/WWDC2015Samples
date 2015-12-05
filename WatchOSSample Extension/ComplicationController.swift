@@ -66,7 +66,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let modularLage = CLKComplicationTemplateModularLargeStandardBody()
             modularLage.headerTextProvider = CLKSimpleTextProvider(text: longText)
             modularLage.body1TextProvider = CLKSimpleTextProvider(text: shortText)
-            modularLage.headerImageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.headerImageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: modularLage)
             handler(entry)
@@ -80,7 +80,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             let utilitarianSmallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
             utilitarianSmallFlat.textProvider = CLKSimpleTextProvider(text: longText)
-            utilitarianSmallFlat.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            utilitarianSmallFlat.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: utilitarianSmallFlat)
             handler(entry)
@@ -94,7 +94,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             let utilitarianLargeFlat = CLKComplicationTemplateUtilitarianLargeFlat()
             utilitarianLargeFlat.textProvider = CLKSimpleTextProvider(text: longText)
-            utilitarianLargeFlat.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            utilitarianLargeFlat.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: utilitarianLargeFlat)
             handler(entry)
@@ -105,7 +105,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let imageData = imageDic[ComplicationImageData]!
             
             let modularLage = CLKComplicationTemplateCircularSmallSimpleImage()
-            modularLage.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: modularLage)
             handler(entry)
@@ -146,7 +146,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let modularLage = CLKComplicationTemplateModularLargeStandardBody()
             modularLage.headerTextProvider = CLKSimpleTextProvider(text: longText)
             modularLage.body1TextProvider = CLKSimpleTextProvider(text: shortText)
-            modularLage.headerImageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.headerImageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: modularLage)
             handler([entry])
@@ -160,7 +160,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             let utilitarianSmallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
             utilitarianSmallFlat.textProvider = CLKSimpleTextProvider(text: longText)
-            utilitarianSmallFlat.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            utilitarianSmallFlat.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: utilitarianSmallFlat)
             handler([entry])
@@ -174,7 +174,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             let modularLage = CLKComplicationTemplateUtilitarianLargeFlat()
             modularLage.textProvider = CLKSimpleTextProvider(text: longText)
-            modularLage.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: modularLage)
             handler([entry])
@@ -185,7 +185,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let imageData = imageDic[ComplicationImageData]!
             
             let modularLage = CLKComplicationTemplateCircularSmallSimpleImage()
-            modularLage.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: modularLage)
             handler([entry])
@@ -225,7 +225,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let modularLage = CLKComplicationTemplateModularLargeStandardBody()
             modularLage.headerTextProvider = CLKSimpleTextProvider(text: longText)
             modularLage.body1TextProvider = CLKSimpleTextProvider(text: shortText)
-            modularLage.headerImageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.headerImageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: modularLage)
             handler([entry])
@@ -239,7 +239,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             let utilitarianSmallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
             utilitarianSmallFlat.textProvider = CLKSimpleTextProvider(text: longText)
-            utilitarianSmallFlat.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            utilitarianSmallFlat.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: utilitarianSmallFlat)
             handler([entry])
@@ -253,7 +253,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             let modularLage = CLKComplicationTemplateUtilitarianLargeFlat()
             modularLage.textProvider = CLKSimpleTextProvider(text: longText)
-            modularLage.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: modularLage)
             handler([entry])
@@ -264,7 +264,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let imageData = imageDic[ComplicationImageData]!
             
             let modularLage = CLKComplicationTemplateCircularSmallSimpleImage()
-            modularLage.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.imageProvider = CLKImageProvider(onePieceImage: imageData)
             
             entry = CLKComplicationTimelineEntry(date: time, complicationTemplate: modularLage)
             handler([entry])
@@ -304,27 +304,27 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let modularLage = CLKComplicationTemplateModularLargeStandardBody()
             modularLage.headerTextProvider = CLKSimpleTextProvider(text: longText)
             modularLage.body1TextProvider = CLKSimpleTextProvider(text: shortText)
-            modularLage.headerImageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            modularLage.headerImageProvider = CLKImageProvider(onePieceImage: imageData)
             handler(modularLage)
             
         case .UtilitarianSmall:
             
             let utilitarianSmallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
             utilitarianSmallFlat.textProvider = CLKSimpleTextProvider(text: longText)
-            utilitarianSmallFlat.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            utilitarianSmallFlat.imageProvider = CLKImageProvider(onePieceImage: imageData)
             handler(utilitarianSmallFlat)
             
         case .UtilitarianLarge:
             
             let utilitarianLarge = CLKComplicationTemplateUtilitarianLargeFlat()
             utilitarianLarge.textProvider = CLKSimpleTextProvider(text: longText)
-            utilitarianLarge.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            utilitarianLarge.imageProvider = CLKImageProvider(onePieceImage: imageData)
             handler(utilitarianLarge)
             
         case .CircularSmall:
             
             let circularSmall = CLKComplicationTemplateCircularSmallSimpleImage()
-            circularSmall.imageProvider = CLKImageProvider(backgroundImage: imageData, backgroundColor: nil)
+            circularSmall.imageProvider = CLKImageProvider(onePieceImage: imageData)
             handler(circularSmall)
         }
     }

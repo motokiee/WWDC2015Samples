@@ -44,35 +44,36 @@ class SanFranciscoViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("SanFranciscoSampleCell", forIndexPath: indexPath)
         
         cell.textLabel?.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい..."
-//        cell.textLabel?.text = "美しい国、ジャパン。"
         cell.detailTextLabel?.text = "The quick brown fox jumps over the lazy dog."
         
-        var weight: CGFloat = UIFontWeightUltraLight
-        
-        defer {
-            cell.textLabel?.font = UIFont.systemFontOfSize(self.fontSize, weight: weight)
-            cell.detailTextLabel?.font = UIFont.systemFontOfSize(self.fontSize, weight: weight)
-        }
-        
-        if items[indexPath.section] == "UIFontWeightUltraLight" {
+        var weight: CGFloat
+
+        switch items[indexPath.section] {
+        case "UIFontWeightUltraLight":
             weight = UIFontWeightUltraLight
-        } else if items[indexPath.section] == "UIFontWeightThin" {
+        case "UIFontWeightThin":
             weight = UIFontWeightThin
-        } else if items[indexPath.section] == "UIFontWeightLight" {
+        case "UIFontWeightLight":
             weight = UIFontWeightLight
-        } else if items[indexPath.section] == "UIFontWeightRegular" {
+        case "UIFontWeightRegular":
             weight = UIFontWeightRegular
-        } else if items[indexPath.section] == "UIFontWeightMedium" {
+        case "UIFontWeightMedium":
             weight = UIFontWeightMedium
-        } else if items[indexPath.section] == "UIFontWeightSemibold" {
+        case "UIFontWeightSemibold":
             weight = UIFontWeightSemibold
-        } else if items[indexPath.section] == "UIFontWeightBold" {
+        case "UIFontWeightBold":
             weight = UIFontWeightBold
-        } else if items[indexPath.section] == "UIFontWeightHeavy" {
+        case "UIFontWeightHeavy":
             weight = UIFontWeightHeavy
-        } else if items[indexPath.section] == "UIFontWeightBlack" {
+        case "UIFontWeightBlack":
             weight = UIFontWeightBlack
+            
+        default:
+            weight = UIFontWeightRegular
         }
+
+        cell.textLabel?.font = UIFont.systemFontOfSize(self.fontSize, weight: weight)
+        cell.detailTextLabel?.font = UIFont.systemFontOfSize(self.fontSize, weight: weight)
         
         return cell
     }
@@ -82,31 +83,33 @@ class SanFranciscoViewController: UITableViewController {
         
         var weight: CGFloat = UIFontWeightUltraLight
         
-        if items[section] == "UIFontWeightUltraLight" {
+        switch items[section] {
+        case "UIFontWeightUltraLight":
             weight = UIFontWeightUltraLight
-        } else if items[section] == "UIFontWeightThin" {
+        case "UIFontWeightThin":
             weight = UIFontWeightThin
-        } else if items[section] == "UIFontWeightLight" {
+        case "UIFontWeightLight":
             weight = UIFontWeightLight
-        } else if items[section] == "UIFontWeightRegular" {
+        case "UIFontWeightRegular":
             weight = UIFontWeightRegular
-        } else if items[section] == "UIFontWeightMedium" {
+        case "UIFontWeightMedium":
             weight = UIFontWeightMedium
-        } else if items[section] == "UIFontWeightSemibold" {
+        case "UIFontWeightSemibold":
             weight = UIFontWeightSemibold
-        } else if items[section] == "UIFontWeightBold" {
+        case "UIFontWeightBold":
             weight = UIFontWeightBold
-        } else if items[section] == "UIFontWeightHeavy" {
+        case "UIFontWeightHeavy":
             weight = UIFontWeightHeavy
-        } else if items[section] == "UIFontWeightBlack" {
+        case "UIFontWeightBlack":
             weight = UIFontWeightBlack
+            
+        default:
+            weight = UIFontWeightRegular
         }
-        
+
         let font = UIFont.systemFontOfSize(self.fontSize, weight: weight)
         
-        print("List:\(items[section])")
-        print("Name:\(font.fontName)\n")
+        return font.fontName.componentsSeparatedByString("-")[1]
         
-        return font.fontName
     }
 }
